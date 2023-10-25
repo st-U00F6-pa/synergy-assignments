@@ -10,7 +10,7 @@
 
 > Создайте несколько переменных. Все переменные должны иметь разный тип данных. Заполните их данными.
 
-(из `src\main.cpp`)
+(из [`src\main.cpp`](./src/main.cpp))
 
 ```cpp
 unsigned char char_variable = 255;
@@ -25,7 +25,7 @@ std::string string_variable = "this is a string from the standard library";
 
 > Перезапишите часть переменных с помощью «cin». Выведите содержимое всех переменных в консоль.
 
-(из `src\main.cpp`)
+(из [`src\main.cpp`](./src/main.cpp))
 
 ```cpp
 write();
@@ -52,7 +52,7 @@ write(int_variable);
 
 `write()` и `read()` определены соответствующе: 
 
-(из `main.cpp`)
+(из [`src\main.cpp`](./src/main.cpp))
 ```cpp
 template<typename T>
 void write(T value) {
