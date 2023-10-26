@@ -40,9 +40,9 @@ write("Second number: "); writeln(second);
 write("Third number: "); writeln(third);
 ```
 
-`write()` и `read()` определены соответствующе: 
+`write()`, `writeln()` и `read()` определены соответствующе: 
 
-(из [`Task 1\include\read_write.hpp`](./Task%201/include/read_write.hpp))
+(из [`Task 1\include\write_read.hpp`](./Task%201/include/write_read.hpp))
 ```cpp
 #define write(value) std::cout << value;
 #define writeln(value) std::cout << value << std::endl;
