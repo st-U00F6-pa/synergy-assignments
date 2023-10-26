@@ -1,22 +1,5 @@
 #include "main.hpp"
 
-template<typename T>
-void write(T value) {
-	
-	std::cout << value << std::endl;
-}
-
-void write() {
-
-	std::cout << "" << std::endl;
-}
-
-template<typename T>
-void read(T& variable) {
-
-	std::cin >> variable;
-}
-
 int main() {
 	
 	// variable definitions
@@ -25,19 +8,19 @@ int main() {
 	int third;
 
 	// data input
-	write("Enter a number: (1/3)");
+	writeln("Enter a number: (1/3)");
 	read(first);
 	
-	write("Enter a number: (2/3)");
+	writeln("Enter a number: (2/3)");
 	read(second);
 	
-	write("Enter a number: (3/3)");
+	writeln("Enter a number: (3/3)");
 	read(third);
 
 	// checking if there are no equal numbers
 	if (first != second && second != third && first != third) {
 		
-		write("No equal numbers entered");
+		writeln("No equal numbers entered");
 		return 0;
 	}
 
@@ -47,7 +30,7 @@ int main() {
 	third += 5;
 
 	// data output
-	write(std::string("First number: ") + std::to_string(first));
-	write(std::string("Second number: ") + std::to_string(second));
-	write(std::string("Third number: ") + std::to_string(third));
+	write("First number: "); writeln(first);
+	write("Second number: "); writeln(second);
+	write("Third number: "); writeln(third);
 }
