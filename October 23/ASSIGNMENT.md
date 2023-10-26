@@ -50,11 +50,10 @@ writeln(int_variable);
 // ...
 ```
 
-`write()` и `read()` определены соответствующе: 
+`writeln()` и `read()` определены соответствующе: 
 
 (из [`include\write_read.hpp`](./include/write_read.hpp))
 ```cpp
-#define write(value) std::cout << value;
 #define writeln(value) std::cout << value << std::endl;
 #define read(variable) std::cin >> variable;
 ```
