@@ -2,14 +2,12 @@
 
 int main() {
 
-	int number = 0;
+	int number = 1;
 
-	while (true) {
+	while (number != 0) {
 
 		writeln("enter a number:");
 		read(number);
 		write("the number you entered is "); writeln(number);
-
-		if (number == 0) break;
 	}
 }

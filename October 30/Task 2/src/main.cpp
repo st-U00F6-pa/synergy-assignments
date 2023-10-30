@@ -2,12 +2,11 @@
 
 int main() {
 
-	std::string response;
+	std::string response = "";
 
-	while (true) {
+	while (response != "потому что" && response != "Потому что") {
 
 		writeln("Почему?");
 		readln(response);
-		if (response == "потому что" || response == "Потому что") return 0;
 	}
 }

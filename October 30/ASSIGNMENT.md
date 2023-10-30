@@ -6,15 +6,13 @@
 
 (из [`Task 1\src\main.cpp`](./Task%201/src/main.cpp))
 ```cpp
-int number = 0;
+int number = 1;
 
-while (true) {
+while (number != 0) {
 
 	writeln("enter a number:");
 	read(number);
 	write("the number you entered is "); writeln(number);
-
-	if (number == 0) break;
 }
 ```
 
@@ -34,13 +32,12 @@ while (true) {
 
 (из [`Task 2\src\main.cpp`](./Task%202/src/main.cpp))
 ```cpp
-std::string response;
+std::string response = "";
 
-while (true) {
+while (response != "потому что" && response != "Потому что") {
 
 	writeln("Почему?");
 	readln(response);
-	if (response == "потому что" || response == "Потому что") return 0;
 }
 ```
 
