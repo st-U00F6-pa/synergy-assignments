@@ -4,10 +4,13 @@ int main() {
 	
 	while (true) {
 
+		writeln("Enter an empty string to stop the program");
 		writeln("Enter your expression:");
 
 		std::string expression;
 		readln(expression);
+
+		if (expression == "") break;
 
 		int word_index = 0;
 		std::string left_operand_string = "";

@@ -10,10 +10,13 @@
 (из [`src\main.cpp`](./src/main.cpp))
 
 ```cpp
+writeln("Enter an empty string to stop the program");
 writeln("Enter your expression:");
 
 std::string expression;
 readln(expression);
+
+if (expression == "") break;
 
 int word_index = 0;
 std::string left_operand_string = "";
@@ -96,4 +99,15 @@ else {
 	continue;
 }
 write("The value of the expression is "); writeln(result);
+```
+
+`writeln()`, `write()`, `readln()` и `read()` определены соответствующе:
+
+(из [`include\write_read.hpp`](./include/write_read.hpp))
+
+```cpp
+#define write(value) std::cout << value;
+#define writeln(value) std::cout << value << std::endl;
+#define read(variable) std::cin >> variable;
+#define readln(variable) std::getline(std::cin, variable);
 ```
