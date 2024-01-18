@@ -14,7 +14,7 @@
 
 Программа состоит из трех функций:
 
-- `void main()` — входная точка программы. Содержит основной цикл программы, реализует пользовательский ввод-вывод, обращается к `encode_string()`. Объявлена в [`include\main.hpp`](./include/main.hpp#L6), реализована в [`src\main.cpp`](./src/main.cpp#L4).
+- `int main()` — входная точка программы. Содержит основной цикл программы, реализует пользовательский ввод-вывод, обращается к `encode_string()`. Объявлена в [`include\main.hpp`](./include/main.hpp#L6), реализована в [`src\main.cpp`](./src/main.cpp#L4).
 
 - `std::string encode_string(std::string input)` — функция, реализующая кодировку строки в азбуку морзе. Итеративно обрабатывает каждый символ строки, обращаясь к `std::string encode_character(char input)`. Объявлена в [`include\translate.hpp`](./include/translate.hpp#L5), реализована в [`src\translate.cpp`](./src/translate.cpp#L45).
 
@@ -40,5 +40,5 @@
 
 - [`translate.cpp`](./src/translate.cpp) (Содержит реализацию функции `encode_character()`, `encode_string()`, словарь `morse_alphabet`)
 
-Полный исходный код программы доступен [тут](https://github.com/st-U00F6-pa/synergy-assignments/tree/master/January%252018).
+Полный исходный код программы доступен [тут](https://github.com/st-U00F6-pa/synergy-assignments/tree/master/January%2018).
 Видеозапись использования программы доступна [тут](./example.mp4)
