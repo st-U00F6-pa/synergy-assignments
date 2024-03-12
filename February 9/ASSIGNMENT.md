@@ -20,18 +20,18 @@ struct animal {
 (из `main()` в [`\src\source.cpp`](./src/source.cpp))
 ```cpp
 std::vector<animal> animals {
-	{
-		20,
-		600.0,
-		"cow"
-	},
-	// ...
+    {
+        20,
+        600.0,
+        "cow"
+    },
+    // ...
 };
 
 writeln("Names of animals in order:")
 for (int i = 0; i < animals.size(); i++) {
-	
-	writeln(animals[i].species);
+    
+    writeln(animals[i].species);
 }
 
 writeln("Current weight of an animal number 3:");
