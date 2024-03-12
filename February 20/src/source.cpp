@@ -2,5 +2,12 @@
 
 int main() {
 	
-    // Nothing specified for main() in the TA
+    std::vector<animal> animals {
+
+        animal(11, "cow"),
+        animal(13, "cow"),
+        animal(9, "cow"),
+        animal(7, "cow"),
+        animal(8, "cow")
+    };
 }
